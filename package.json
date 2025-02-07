@@ -14,7 +14,8 @@
     "next": "15.1.6",
     "porfolio-ignacio-manuel-ledesma": "file:",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-scrollbar-hide": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

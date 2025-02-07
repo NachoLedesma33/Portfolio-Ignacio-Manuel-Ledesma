@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Ocultar barras de scroll en todos los navegadores */
+* {
+  -ms-overflow-style: none; /* Internet Explorer y Edge */ /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge y Opera */
+}
+

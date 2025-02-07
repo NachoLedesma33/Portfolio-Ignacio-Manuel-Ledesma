@@ -3,17 +3,13 @@ import Image from "next/image";
 import certificatesData from "../data/certificates.json";
 
 const Certificates: React.FC = () => {
-  const [selectedCertificate, setSelectedCertificate] = useState<number | null>(
-    null
-  );
+  const [selectedCertificate, setSelectedCertificate] = useState<number | null>(null);
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen p-12 text-gray-300 flex flex-col justify-center items-center">
-      <h2 className="text-4xl font-bold text-red-500 text-center py-1">
-        Certificados
-      </h2>
+    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen p-12 text-gray-300 flex flex-col justify-center items-center overflow-hidden">
+      <h2 className="text-4xl font-bold text-red-500 text-center py-1">Certificados</h2>
       <p className="text-xl mt-4 text-gray-400 mb-8">
-        Algunos de mis certificados en estos 4 años de desarrollo.
+        Algunos de mis certificados en estos años de desarrollo.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

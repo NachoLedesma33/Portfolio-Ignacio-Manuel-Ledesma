@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
       </h2>
       <div
         className="flex-grow overflow-y-auto p-4"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }} // Oculta barra de scroll
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }} 
       >
         <p className="text-xl text-center mb-8 text-gray-300">
           Mis habilidades están basadas en torno a las siguientes tecnologías
