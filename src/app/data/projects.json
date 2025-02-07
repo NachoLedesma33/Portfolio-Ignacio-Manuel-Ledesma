@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Web",
+    "description": "Una aplicación web de portafolio para mostrar proyectos y certificados.",
+    "language": "TypeScript",
+    "technologies": ["React", "Next.js", "Tailwind CSS"],
+    "image": "/images/portfolio-thumb.jpg",
+    "fullImage": "/images/portfolio-full.jpg"
+  },
+  {
+    "id": 2,
+    "title": "API REST",
+    "description": "Una API RESTful para gestionar tareas.",
+    "language": "Python",
+    "technologies": ["Flask", "SQLAlchemy", "Docker"],
+    "image": "/images/api-thumb.jpg",
+    "fullImage": "/images/api-full.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Sistema de Autenticación",
+    "description": "Un sistema de autenticación basado en roles.",
+    "language": "Java",
+    "technologies": ["Spring Boot", "JWT", "Hibernate"],
+    "image": "/images/auth-thumb.jpg",
+    "fullImage": "/images/auth-full.jpg"
+  },
+  {
+    "id": 4,
+    "title": "E-commerce Web",
+    "description": "Aplicación web para un sistema de comercio electrónico.",
+    "language": "JavaScript",
+    "technologies": ["React", "Node.js", "MongoDB"],
+    "image": "/images/ecommerce-thumb.jpg",
+    "fullImage": "/images/ecommerce-full.jpg"
+  }
+]
