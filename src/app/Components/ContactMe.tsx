@@ -21,13 +21,13 @@ const ContactMe: React.FC = () => {
     }
 
     if (!validateEmail(email)) {
-      setError("Ingresa un mail valido.");
+      setError("Ingresa un mail válido.");
       return;
     }
 
     setError("");
-    alert("Form submitted successfully!");
-    // Despues hago el codigo o busco una API para envio de mail
+    alert("El mensaje fue enviado!");
+  
   };
 
   return (
@@ -37,7 +37,7 @@ const ContactMe: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <h2 className="text-2xl font-bold text-red-500 mb-8">Contactarme via mail</h2>
+      <h2 className="text-2xl font-bold text-red-500 mb-8">Contactarme vía mail</h2>
 
       <motion.form
         className="w-full max-w-lg space-y-6"
@@ -51,7 +51,7 @@ const ContactMe: React.FC = () => {
             htmlFor="name"
             className="block text-sm font-medium text-gray-400"
           >
-            Nombre
+            Nombre y Apellido
           </label>
           <input
             type="text"
@@ -68,7 +68,7 @@ const ContactMe: React.FC = () => {
             htmlFor="email"
             className="block text-sm font-medium text-gray-400"
           >
-            Mail
+            Su Mail
           </label>
           <input
             type="email"
@@ -110,11 +110,11 @@ const ContactMe: React.FC = () => {
 
         <motion.button
           type="submit"
-          className="w-full p-3 bg-gray-700 text-gray-300 rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500"
+          className="w-full p-3 bg-gray-700 text-red-300 rounded-lg hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Send Message
+          Enviar
         </motion.button>
       </motion.form>
     </motion.div>

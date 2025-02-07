@@ -19,6 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveTab }) => {
           "Certificados",
         ].map((tab) => (
           <button
+            type="button"
             key={tab}
             className="text-red-400 hover:text-red-100 transition-all duration-300 transform-gpu hover:scale-105 hover:shadow-lg hover:shadow-red-900/50 text-lg font-semibold"
             onClick={() => setActiveTab(tab)}
