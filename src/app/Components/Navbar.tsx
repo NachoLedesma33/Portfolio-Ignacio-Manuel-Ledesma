@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveTab }) => {
           <button
             type="button"
             key={tab}
-            className="text-red-400 hover:text-red-100 transition-all duration-300 transform-gpu hover:scale-105 hover:shadow-lg hover:shadow-red-900/50 text-lg font-semibold"
+            className="text-red-400 hover:text-red-100 transition duration-300 transform-gpu hover:scale-110 hover:shadow-lg hover:shadow-red-900/50 text-lg font-semibold px-4 py-2 rounded-md"
             onClick={() => setActiveTab(tab)}
           >
             {tab}
