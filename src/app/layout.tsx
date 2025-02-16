@@ -14,7 +14,7 @@ variable: '--font-mono',
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Ignacio Ledesma",
+  title: "Portfolio - Ignacio Manuel Ledesma",
   description: "Portfolio showcasing the work of Ignacio Ledesma",
   icons: {
     icon: "/images/icons8-portafolio-66.png",
