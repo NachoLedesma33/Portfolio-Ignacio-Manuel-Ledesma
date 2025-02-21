@@ -30,15 +30,15 @@ const AboutMe: React.FC = () => {
           forjado mi experiencia y mi perspectiva única en el campo.
         </p>
         <p className="text-lg mb-4">
-          Me apasiona especialmente la creación de interfaces intuitivas para el
+          Me apasiona principalmente la creación de interfaces intuitivas para el
           usuario, la optimización del rendimiento. Creo firmemente en el poder
           de la tecnología para transformar ideas en realidades tangibles y
           mejorar la vida de las personas.
         </p>
         <p className="text-lg mb-4">
-          Fuera del mundo del código, disfruto de explorar nuevas tecnologías ,
+          Fuera del mundo de mis códigos, disfruto de explorar nuevas tecnologías ,
           contribuir a proyectos de código abierto, o compartir mis
-          conocimientos a personas que las necesiten una mano.
+          conocimientos a personas que las necesiten ayuda con su desarrollo.
         </p>
       </motion.div>
     </div>
