@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const ContactMe: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [asunto, setAsunto] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
@@ -21,12 +22,12 @@ const ContactMe: React.FC = () => {
     }
 
     if (!validateEmail(email)) {
-      setError("Ingresa un mail válido.");
+      setError("Ingresa un email válido.");
       return;
     }
 
     setError("");
-    e.currentTarget.submit(); // Envía el formulario
+    e.currentTarget.submit();
   };
 
   return (
@@ -49,8 +50,8 @@ const ContactMe: React.FC = () => {
         action="https://formsubmit.co/d0390a99b30dbdd5c6db350feeb7420f"
         method="POST"
       >
+        <input type="hidden" name="_next" value="https://ledesma.dev" />
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="http://localhost:3000/" />
         <input
           type="hidden"
           name="_subject"
@@ -99,13 +100,13 @@ const ContactMe: React.FC = () => {
             Asunto
           </label>
           <input
-            type="email"
+            type="text"
             id="asunto"
             name="asunto"
             placeholder="Ingrese el asunto"
             className="mt-1 p-3 w-full bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:border-gray-400"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={asunto}
+            onChange={(e) => setAsunto(e.target.value)}
           />
         </div>
 

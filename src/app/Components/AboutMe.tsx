@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-4xl font-bold mb-6 text-red-500"
+        className="text-2xl font-bold mb-6 text-red-500"
       >
         Sobre Mí
       </motion.h1>
@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="max-w-2xl text-center"
+        className="text-2xl max-w-2xl text-center"
       >
         <p className="text-lg mb-4">
           Como Desarrollador Web Full Stack me dedico a crear

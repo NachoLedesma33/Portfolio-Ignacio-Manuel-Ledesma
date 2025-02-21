@@ -8,8 +8,8 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ setActiveTab }) => {
   return (
-    <nav className="bg-gradient-to-b from-gray-800/80 via-gray-900/80 to-black/80 p-6 flex flex-col items-center justify-between min-h-screen w-48 rounded-lg shadow-lg backdrop-blur-lg">
-      <div className="flex flex-col space-y-4 mt-4">
+    <nav className="bg-gradient-to-b from-gray-800/80 via-gray-900/80 to-black/90 p-6 flex flex-col items-center justify-between min-h-screen w-32 rounded-lg shadow-lg backdrop-blur-lg">
+      <div className="flex flex-col space-y-2 mt-2">
         {[
           "Inicio",
           "Sobre Mi",
@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveTab }) => {
           <button
             type="button"
             key={tab}
-            className="text-red-700 hover:text-red-400 transition duration-300 transform-gpu hover:scale-110 hover:shadow-lg hover:shadow-red-900/50 text-lg font-semibold px-4 py-2 rounded-md"
+            className="text-red-700 hover:text-red-400 transition duration-300 transform-gpu hover:scale-75 hover:shadow-lg hover:shadow-red-900/50 text-lg font-semibold px-3 py-2 rounded-md"
             onClick={() => setActiveTab(tab)}
           >
             {tab}
@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveTab }) => {
           <LinkedInIcon />
           <GitHubIcon />
         </div>
-        <h3 className="text-white text-lg font-bold">Mis Redes</h3>
+        <h3 className="text-white text-center font-bold">Mis Redes</h3>
       </div>
     </nav>
   );
