@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
       <h2 className="text-4xl font-bold text-red-500 text-center py-1">
         Proyectos
       </h2>
-      <p className="text-xl mt-5 text-gray-400 mb-9">
+      <p className="text-1xl mt-2 text-gray-400 mb-9">
         Estos son algunos de mis proyectos mas destacados realizados utilizando diferentes tecnologías.
       </p>
 

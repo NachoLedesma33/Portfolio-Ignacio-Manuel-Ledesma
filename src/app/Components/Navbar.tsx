@@ -21,14 +21,14 @@ const Navbar: React.FC<NavbarProps> = ({ setActiveTab }) => {
           <button
             type="button"
             key={tab}
-            className="text-red-400 hover:text-red-100 transition duration-300 transform-gpu hover:scale-110 hover:shadow-lg hover:shadow-red-900/50 text-lg font-semibold px-4 py-2 rounded-md"
+            className="text-red-700 hover:text-red-400 transition duration-300 transform-gpu hover:scale-110 hover:shadow-lg hover:shadow-red-900/50 text-lg font-semibold px-4 py-2 rounded-md"
             onClick={() => setActiveTab(tab)}
           >
             {tab}
           </button>
         ))}
       </div>
-      <div className="mt-8">
+      <div className="mt-10">
         <div className="flex items-center space-x-4 mb-2 justify-center">
           <LinkedInIcon />
           <GitHubIcon />
