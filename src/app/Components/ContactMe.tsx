@@ -26,26 +26,36 @@ const ContactMe: React.FC = () => {
     }
 
     setError("");
-    alert("El mensaje fue enviado!");
-  
+    e.currentTarget.submit(); // Envía el formulario
   };
 
   return (
     <motion.div
-      className="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen p-12 text-gray-300 flex flex-col justify-center items-center rounded-lg"
+      className="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen p-6 text-gray-300 flex flex-col justify-center items-center rounded-lg"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <h2 className="text-2xl font-bold text-red-500 mb-8">Contactarme vía mail</h2>
+      <h2 className="text-2xl font-bold text-red-500 mb-2">
+        Contactarme vía mail
+      </h2>
 
       <motion.form
-        className="w-full max-w-lg space-y-6"
+        className="w-full max-w-lg space-y-2 "
         onSubmit={handleSubmit}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
+        action="https://formsubmit.co/d0390a99b30dbdd5c6db350feeb7420f"
+        method="POST"
       >
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="http://localhost:3000/" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nuevo mensaje de contacto!"
+        />
         <div>
           <label
             htmlFor="name"
@@ -56,6 +66,7 @@ const ContactMe: React.FC = () => {
           <input
             type="text"
             id="name"
+            name="name"
             placeholder="Ingrese su nombre"
             className="mt-1 p-3 w-full bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:border-gray-400"
             value={name}
@@ -68,12 +79,30 @@ const ContactMe: React.FC = () => {
             htmlFor="email"
             className="block text-sm font-medium text-gray-400"
           >
-            Su Mail
+            Mail
           </label>
           <input
             type="email"
             id="email"
+            name="email"
             placeholder="Ingrese su mail"
+            className="mt-1 p-3 w-full bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:border-gray-400"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-gray-400"
+          >
+            Asunto
+          </label>
+          <input
+            type="email"
+            id="asunto"
+            name="asunto"
+            placeholder="Ingrese el asunto"
             className="mt-1 p-3 w-full bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:border-gray-400"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -82,13 +111,14 @@ const ContactMe: React.FC = () => {
 
         <div>
           <label
-            htmlFor="Mensaje"
+            htmlFor="message"
             className="block text-sm font-medium text-gray-400"
           >
             Mensaje
           </label>
           <textarea
             id="message"
+            name="message"
             placeholder="Escriba su mensaje"
             className="mt-1 p-3 w-full bg-gray-800 text-gray-300 border border-gray-600 rounded-lg focus:outline-none focus:border-gray-400"
             rows={4}
