@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <p className="text-2xl text-red-100 text-justify lg:text-left">
           Soy un apasionado programador web con enfoque en el desarrollo de
           aplicaciones modernas,{" "}
-          <b className="text-red-400">pricipalmente con Java y JavaScript</b>.
+          <b className="text-red-400">pricipalmente en JavaScript</b>.
         </p>
       </motion.div> 
 
