@@ -26,5 +26,12 @@
     "image": "/images/TS-Ledesma-Ignacio.png",
     "description": "Certificado de desarrollo con TypeScript.",
     "fullImage": "/images/ts-ledesma-ignacio.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Desarrollo Web FullStack con Java",
+    "image": "/images/Java-FullStack-ledesma-ignacio.png",
+    "description": "Certificado de desarrollo Full Stack con Java.",
+    "fullImage": "/images/Java-Ledesma-ignacio.jpg"
   }
 ]
